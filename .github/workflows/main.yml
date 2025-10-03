@@ -1,0 +1,16 @@
+name: Test Email Step
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubantu latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: 23f3001176@ds.study.iitm.ac.in
+        run: echo "Hello, this step contains my email in its name!"
